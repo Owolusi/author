@@ -1,0 +1,21 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>JAVA PROMPT</title>
+        <script> 
+       var fruits=["apple","orange"];
+       function loadFruits(){
+         document.getElementById("fish").innerHTML=fruits;
+       }
+       function myFunction(){
+         var fruit=prompt("what is your favorite fruit");
+         fruits[fruits.length]=fruit;
+         document.getElementById("fish").innerHTML=fruits;
+       }
+   </script>
+   </head>
+   <body onload="loadFruits()">
+   <button onclick="myFunction()">click here to add fruit</button>
+   <p id="fish"></p>
+   </body>
